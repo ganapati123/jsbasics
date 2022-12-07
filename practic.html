@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option>Days</option>
+        <script>
+            var day=1, res="";
+             while(day<=31)
+             {
+                res+=`<option>${day}</option>`
+               //res+=`<option>${months[index]}</option>`
+              // res+=`<option> ${months[index].slice(0,3)}</option>`
+                day ++;
+             }
+             document.write(res)
+        </script>
+    </select>
+       
+    <select>
+        <option>months</option>
+        <script>
+            var months= ["January","February","March","April","May","June","July",
+                     "August","September","October","November","December"];
+
+             var index=0,res=""
+             while(index<=months.length)
+             {
+                //document.write(`<option>${months[index].slice(0,3)}</option>`)
+               //res+=`<option>${months[index]}</option>`
+               res+=`<option> ${months[index]}</option>`
+                index++;
+             }
+            document.write(res)
+        </script>
+    </select>
+
+    <select>
+        <option>Years</option>
+        <script>
+            var year=2022, res="";
+             while(year>=1901)
+             {
+                res+=`<option>${year}</option>`
+               //res+=`<option>${months[index]}</option>`
+              // res+=`<option> ${months[index].slice(0,3)}</option>`
+                year --;
+             }
+             document.write(res)
+        </script>
+    </select>
+</body>
+</html>

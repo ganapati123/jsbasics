@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="practice1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h2 class="text-center py-2">Emp_Data</h2>
+    <table class="table table-light table-bordered w-50 mx-auto">
+        <thead class="table-dark">
+            <tr>
+                <script>
+                    for(var key in emp[0])
+                    {
+                        document.write(`<th>${key}</th>`)
+                    }
+                </script>
+            </tr>
+
+        </thead>
+        <tbody>
+            
+                <script>
+                    for(var e of emp)
+                    {
+                        document.write(`<tr>
+                             <td>${e.id}</td>
+                             <td>${e.name}</td>
+                             <td>${e.email}</td>
+                             <td>${e.phone}</td>
+                        </tr>`)               
+                    }
+                    
+                </script>
+            
+        </tbody>
+
+    </table>
+</body>
+</html>
